@@ -1,0 +1,43 @@
+---
+title: "ESM 244 Lab 1"
+author: "Mireia Valle"
+date: "08/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Install packages
+```{r, message = FALSE, warning = FALSE}
+#install.packages ("tidyverse")
+#install.packages ("here")
+#install.packages ("janitor")
+#install.packages ("kableExtra")
+#install.packages ("blogdown")
+```
+
+Attach (load) packages with library():
+```{r, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(here)  
+library(janitor) 
+library(kableExtra)
+library (blogdown)
+
+```
+
+Install Hugo using blogdown functions by running the following:
+```{r, message = FALSE, warning = FALSE}
+blogdown::install_hugo()
+```
+
+check the version of Hugo
+```{r}
+blogdown::hugo_version()
+```
+
+
+
+
